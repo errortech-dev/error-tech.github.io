@@ -6708,6 +6708,12 @@ function calculateArea(){
      var less=6;
 
      var con=document.getElementById('selecto').value;
+     if(!(event.target.id=="name"||event.target.id=="ty1"||event.target.id=="lot1")){
+     if(name == ""|| $('#ty1').text()==""|| $('#lot1').text()=="")
+     {
+       alert("Enter name, colour and lotID");
+     }
+     }
    var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
      for(var g=1;g<=t;g++){
 
