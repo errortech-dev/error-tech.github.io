@@ -6643,7 +6643,7 @@ if(less==3){
                                 	var d=data[k].split("-");
                                 	total=total+Number(d[d.length-3]);
                                 }
-                                var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total+"</td><td><button class='btn btn-primary'  onclick='func2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-danger'  onclick='func1(this)' id='dlt-"+i+"'>DELETE</button></td></tr>";
+                                var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total+"</td><td><button class='btn btn-primary'  onclick='func2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-danger'  onclick='func1(this); location.reload()' id='dlt-"+i+"'>DELETE</button></td></tr>";
                                 
                                 
                                 $(".odd").remove();
