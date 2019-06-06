@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "edit.html",
-    "revision": "2537d5f4df3b1ac3abf378f48a5c6dbc"
+    "revision": "993bd04fec45e735f6ac484f4a44a416"
   },
   {
     "url": "edit2.html",
-    "revision": "e2c48bb54d126370f2e27c946752f688"
+    "revision": "bab477d3f9e8014074472b64108d51ac"
   },
   {
     "url": "html2pdf.bundle.js",
@@ -39,47 +39,47 @@ self.__precacheManifest = [
   },
   {
     "url": "images/icons/icon-128x128.png",
-    "revision": "2a372cd9842c18fe97c7b8803ed656d3"
+    "revision": "a1ef1b9708d1ea183a9bc3c84ae12f2b"
   },
   {
     "url": "images/icons/icon-144x144.png",
-    "revision": "458e8b253b8b721cc29e5819d7f88d86"
+    "revision": "46191e632fc0608fddd6807fb3c0e195"
   },
   {
     "url": "images/icons/icon-152x152.png",
-    "revision": "0fc1ae368a3a491ca30546ca52b32993"
+    "revision": "cb261019ea0d6deebd87ade090d74447"
   },
   {
     "url": "images/icons/icon-192x192.png",
-    "revision": "78e1134d08fd60c0400ef854e3a9a968"
+    "revision": "add0be3f5939bed00e3d5c25d3704b8c"
   },
   {
     "url": "images/icons/icon-384x384.png",
-    "revision": "6b404bd7bfab30bfbc00e4da6d79efb1"
+    "revision": "944845293fe2d79da51210d2abef435a"
   },
   {
     "url": "images/icons/icon-512x512.png",
-    "revision": "6b404bd7bfab30bfbc00e4da6d79efb1"
+    "revision": "42ae7882c8e77d70b4139cefcd7a2a4d"
   },
   {
     "url": "images/icons/icon-72x72.png",
-    "revision": "76c610194d52a1ae12ee2d8471f0da30"
+    "revision": "afe3b946a130e48a1beff91016a9ab12"
   },
   {
     "url": "images/icons/icon-96x96.png",
-    "revision": "a408906c1a0eb33ea01210689af5dfa3"
+    "revision": "997a884575b29116abb58e1d46a79885"
   },
   {
     "url": "includesw.js",
-    "revision": "c79f9aca0c781db80248971330ddd1e5"
+    "revision": "cd2a6147acc3db4418f33cae188c40f8"
   },
   {
     "url": "index.html",
-    "revision": "e3207ad69ae2bbdea7f6eca40834c5ce"
+    "revision": "8f9919496d5f6df1f3a79802484cb856"
   },
   {
     "url": "offline_bills.html",
-    "revision": "6857074a4a9d89b346ba7ef61bf314a4"
+    "revision": "39d0a5f7a5e784a82d4fa53390a32e74"
   },
   {
     "url": "pdf1.html",
@@ -91,7 +91,7 @@ self.__precacheManifest = [
   },
   {
     "url": "practice1.html",
-    "revision": "061454c359d0b43f11667d940b44df56"
+    "revision": "8844029cf7619eca3c67518a0aab10d1"
   },
   {
     "url": "reprint1.html",
@@ -100,6 +100,14 @@ self.__precacheManifest = [
   {
     "url": "reprint2.html",
     "revision": "ce019a2f6ed33d7140c384512c7a7624"
+  },
+  {
+    "url": "unsaved.html",
+    "revision": "a5b1e36af93556d1b3699afc2f30e9c4"
+  },
+  {
+    "url": "unsaved2.html",
+    "revision": "0264c6a9c14f0f5172d1d00b5737f525"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
