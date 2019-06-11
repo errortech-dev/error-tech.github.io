@@ -54,15 +54,15 @@
      if(!(event.target.id=="name"||event.target.id=="ty1"||event.target.id=="lot1"||event.target.id=="adress"||event.target.id=="phone"||event.target.id=="date"||event.target.id=="refer"||event.target.id=="load"||event.target.id=="aprvd"||event.target.id=="sales"||event.target.id=="vehicle")){
      if(name == ""|| $('#ty1').text()==""|| $('#lot1').text()=="")
      {
-       alert("Enter name, colour and lotID");
+      //  alert("Enter name, colour and lotID");
      }
      if(clr<len){
            	   $("#ty"+t).css("background-color", "skyblue");
-               //alert('please fill Color');
+               alert('please fill Color');
            }
            else if(lid<len){
            	$("#lot"+t).css("background-color", "skyblue");
-           	//alert('please fill LOTID');
+           	alert('please fill LOTID');
            }
      }
    var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
@@ -244,15 +244,15 @@
      if(!(event.target.id=="name"||event.target.id=="ty1"||event.target.id=="lot1"||event.target.id=="adress"||event.target.id=="phone"||event.target.id=="date"||event.target.id=="refer"||event.target.id=="load"||event.target.id=="aprvd"||event.target.id=="sales"||event.target.id=="vehicle")){
      if(name == ""|| $('#ty1').text()==""|| $('#lot1').text()=="")
      {
-       alert("Enter name, colour and lotID");
+      //  alert("Enter name, colour and lotID");
      }
      if(clr<len){
            	   $("#ty"+t).css("background-color", "skyblue");
-               //alert('please fill Color');
+               alert('please fill Color');
            }
            else if(lid<len){
            	$("#lot"+t).css("background-color", "skyblue");
-           	//alert('please fill LOTID');
+           	alert('please fill LOTID');
            }
      }
    var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
