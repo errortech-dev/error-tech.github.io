@@ -81,9 +81,10 @@ font-size:20px;
     <p align="center"> <button onclick="test();">Download</button><button onclick="myclick()">print</button><button ><a href="practice1.html">Home</a></button></p>
   </body>
       <script>
-    var len=JSON.parse(localStorage.getItem("prac")).length;
+    var len=JSON.parse(localStorage.getItem("unsaved")).length;
 
-    var n=len-1;
+    var n=localStorage.getItem('row');
+    localStorage.removeItem("row");
     var array=[];
     var final=[];
     var sum=[];
@@ -96,7 +97,7 @@ font-size:20px;
     var a=0;
     var s=0;
     var d=0;
-    final=JSON.parse(localStorage.getItem("prac"))[n];
+    final=JSON.parse(localStorage.getItem("unsaved"))[n];
     
    
     var name12=final[0];

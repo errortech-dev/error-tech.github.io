@@ -26,6 +26,14 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
+    "url": "3optionfunc.js",
+    "revision": "50633a7e9e609f6aba818fe9236b3103"
+  },
+  {
+    "url": "6optionfunc.js",
+    "revision": "39124777913f4b52936fa5f5835e1e6d"
+  },
+  {
     "url": "bootstrap.min.css",
     "revision": "ec3bb52a00e176a7181d454dffaea219"
   },
@@ -35,11 +43,11 @@ self.__precacheManifest = [
   },
   {
     "url": "edit.html",
-    "revision": "4e40b8e9a636adb39e91a79da0634908"
+    "revision": "8d573c1c260920b11c8cbac4718ef8c1"
   },
   {
     "url": "edit2.html",
-    "revision": "0e18f5949c0dbe5c416ba868a75a4412"
+    "revision": "58bb6047293f4b0944c37e6f6309ca2c"
   },
   {
     "url": "html2pdf.bundle.js",
@@ -83,31 +91,35 @@ self.__precacheManifest = [
   },
   {
     "url": "index (copy).html",
-    "revision": "bfa9982a67a4cb88b3a820089d923279"
+    "revision": "725e516d03f56dd98180cb0a02017c98"
   },
   {
     "url": "index.html",
-    "revision": "79c35ddd3a5ab44a8b3ebedd0bef75d6"
+    "revision": "573eb09364ba0ec42018b5fbbc540b6d"
   },
   {
     "url": "jquery-2.2.4.min.js",
     "revision": "2f6b11a7e914718e0290410e85366fe9"
   },
   {
+    "url": "manifest.json",
+    "revision": "2271e892ba7fc8636c9a851ddb6ba614"
+  },
+  {
     "url": "offline_bills.html",
-    "revision": "b3b6293a3602193adf53c52592ac88d9"
+    "revision": "e8d505bbe41481a26e594be18fc3616e"
   },
   {
     "url": "pdf1.html",
-    "revision": "b57609c5fd93a2ed315312e09130afe7"
+    "revision": "eeea8383c7cc38c1749913c7d903467c"
   },
   {
     "url": "pdf2.html",
-    "revision": "87c28f7f37e49181d22d73f4beca81bc"
+    "revision": "3ae1e57739ba5ebac162a2bc12153927"
   },
   {
     "url": "practice1.html",
-    "revision": "3811121e4aff442c01c2a087cb4561cb"
+    "revision": "e2c4faad7f2766b0682c39ba43b97077"
   },
   {
     "url": "reprint1.html",
@@ -119,11 +131,11 @@ self.__precacheManifest = [
   },
   {
     "url": "unsaved.html",
-    "revision": "485256ea4ab259e2a53edb85904c196b"
+    "revision": "e63bc711e6504b0d5553854593872472"
   },
   {
     "url": "unsaved2.html",
-    "revision": "a0344f5731e26b3250d9acdbf040e576"
+    "revision": "b8e3bb6ee17fc34350f6243f7531d785"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

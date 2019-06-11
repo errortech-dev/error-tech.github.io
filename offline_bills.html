@@ -6003,7 +6003,7 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
     	//$("#values").empty();
       //alert(elem.id);
        id=(elem.id).split("-");
-      var x=JSON.parse(localStorage.getItem("prac"))[id[1]];
+      var x=JSON.parse(localStorage.getItem("unsaved"))[id[1]];
       //alert(x);
       var values="";
       var data=x;
@@ -6199,7 +6199,7 @@ $("#submit").click(function(){
   var sale21=document.getElementById("empid").value;
 
 
-  	 var x=JSON.parse(localStorage.getItem("prac"))[(id[1])];
+  	 var x=JSON.parse(localStorage.getItem("unsaved"))[(id[1])];
       //alert(x);
       var got=0;
       var values="";
@@ -6299,22 +6299,22 @@ if(less==3){
                       	 //alert(got);
                       	if(data==1){
                       		var bills=[];
-                     var length=JSON.parse(localStorage.getItem("prac")).length;
+                     var length=JSON.parse(localStorage.getItem("unsaved")).length;
                      //alert(id[1]-1);
                      alert("submitted successfully!!");
                      for(var f=0;f<length;f++){
                          if(f!=id[1]){
                          var bill=[];
-          bill=JSON.parse(localStorage.getItem('prac'))[f];
+          bill=JSON.parse(localStorage.getItem('unsaved'))[f];
          
      
      
      bills.push(bill);
                          }
                      }
-                     localStorage.removeItem("prac");
+                     localStorage.removeItem("unsaved");
                      
-     localStorage.setItem("prac",JSON.stringify(bills));
+     localStorage.setItem("unsaved",JSON.stringify(bills));
       
                      
                   
@@ -6350,22 +6350,22 @@ if(less==3){
                       	 //alert(got);
                       	if(data==1){
                       		var bills=[];
-                     var length=JSON.parse(localStorage.getItem("prac")).length;
+                     var length=JSON.parse(localStorage.getItem("unsaved")).length;
                      //alert(id[1]-1);
                      alert("submitted successfully!!");
                      for(var f=0;f<length;f++){
                          if(f!=id[1]){
                          var bill=[];
-          bill=JSON.parse(localStorage.getItem('prac'))[f];
+          bill=JSON.parse(localStorage.getItem('unsaved'))[f];
          
      
      
      bills.push(bill);
                          }
                      }
-                     localStorage.removeItem("prac");
+                     localStorage.removeItem("unsaved");
                      
-     localStorage.setItem("prac",JSON.stringify(bills));
+     localStorage.setItem("unsaved",JSON.stringify(bills));
       
                      
                   
@@ -6385,7 +6385,7 @@ if(less==3){
   });
 function print(elem){
 	var id=(elem.id).split("-");
-      var x=JSON.parse(localStorage.getItem("prac"))[id[1]];
+      var x=JSON.parse(localStorage.getItem("unsaved"))[id[1]];
       //alert(x);
       var values="";
       var data=x;
@@ -6408,14 +6408,14 @@ function auto_upload() {
 
 	var sale21="auto";
 
- var length=JSON.parse(localStorage.getItem("prac")).length;
+ var length=JSON.parse(localStorage.getItem("unsaved")).length;
  //alert(length);
 
                      //alert(id[1]-1);
                      //alert("submitted successfully!!");
                      for(var index=0;index<length;index++){
                      	//alert(index);
-  	 var x=JSON.parse(localStorage.getItem("prac"))[index];
+  	 var x=JSON.parse(localStorage.getItem("unsaved"))[index];
       //alert(x);
       var got=0;
       var values="";
@@ -6461,10 +6461,10 @@ if(less==3){
                       	//alert(index);
                       	 got=1;
                       	  var bills_total=[];
-                      	  bills_total.push(JSON.parse(localStorage.getItem('prac')));
+                      	  bills_total.push(JSON.parse(localStorage.getItem('unsaved')));
                       	   //alert(bills_total[0][temp][12]);
                       	   bills_total[0][temp][12]="YES";
-                      	   localStorage.setItem("prac",JSON.stringify(bills_total[0]));
+                      	   localStorage.setItem("unsaved",JSON.stringify(bills_total[0]));
                       	
                       	
                       
@@ -6488,23 +6488,23 @@ if(less==3){
 
                       	 got=1;
                       	 var bills_total=[];
-                      	  bills_total.push(JSON.parse(localStorage.getItem('prac')));
+                      	  bills_total.push(JSON.parse(localStorage.getItem('unsaved')));
                       	   //alert(bills_total[0][temp][12]);
                       	   bills_total[0][temp][12]="YES";
-                      	   localStorage.setItem("prac",JSON.stringify(bills_total[0]));
+                      	   localStorage.setItem("unsaved",JSON.stringify(bills_total[0]));
             
            
                       	 
                       	 //alert(got);
                       /*	if(data==1){
                       		var bills=[];
-                     var length=JSON.parse(localStorage.getItem("prac")).length;
+                     var length=JSON.parse(localStorage.getItem("unsaved")).length;
                      //alert(id[1]-1);
                      //alert("submitted successfully!!");
                      for(var f=0;f<length;f++){
                          if(f!=index){
                          var bill=[];
-          bill=JSON.parse(localStorage.getItem('prac'))[f];
+          bill=JSON.parse(localStorage.getItem('unsaved'))[f];
             bill[12]="YES";
           alert(bill);
          
@@ -6513,9 +6513,9 @@ if(less==3){
      bills.push(bill);
                          }
                      }
-                     localStorage.removeItem("prac");
+                     localStorage.removeItem("unsaved");
                      
-     localStorage.setItem("prac",JSON.stringify(bills));
+     localStorage.setItem("unsaved",JSON.stringify(bills));
       
                      
                   
@@ -6530,13 +6530,13 @@ if(less==3){
 }
 //change status
 /*var bills=[];
-                     var length=JSON.parse(localStorage.getItem("prac")).length;
+                     var length=JSON.parse(localStorage.getItem("unsaved")).length;
                      //alert(id[1]-1);
                      //alert("submitted successfully!!");
                      for(var f=0;f<length;f++){
                        
                          var bill=[];
-          bill=JSON.parse(localStorage.getItem('prac'))[f];
+          bill=JSON.parse(localStorage.getItem('unsaved'))[f];
             bill[12]="YES";
           //alert(bill);
          
@@ -6545,9 +6545,9 @@ if(less==3){
      bills.push(bill);
                          }
                    
-                     localStorage.removeItem("prac");
+                     localStorage.removeItem("unsaved");
                      
-     localStorage.setItem("prac",JSON.stringify(bills));*/
+     localStorage.setItem("unsaved",JSON.stringify(bills));*/
     /* end of change status*/
 
  }
@@ -6591,44 +6591,51 @@ if(less==3){
 
     </script>
     <script>
+      var arr = {};
+      var whole={};
         if((localStorage.getItem("unsaved"))){
-             var whole=[];
+             
                             var length=JSON.parse(localStorage.getItem("unsaved")).length;
                             //alert(length);
                             whole=JSON.parse(localStorage.getItem("unsaved"));
                             
                             for(var i in whole){
-                            	total=0;
-                                var l=whole[i].length;
-                                var bill_id="OFL-00"+(i+1);
-                                var cust=whole[i][0];
-                                var sales_person=whole[i][10];
-                                var date=whole[i][3];
-                                var str1=whole[i][11];
-                                str1=str1.toString();
-                                var data=str1.split(",");
-                                for(var k=0;k<data.length;k++){
-                                	var d=data[k].split("-");
-                                	total=total+Number(d[d.length-3]);
-                                }
-                                var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total+"</td><td><button class='btn btn-primary'  onclick='func2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-danger'  onclick='func1(this); location.reload()' id='dlt-"+i+"'>DELETE</button></td></tr>";
-                                
-                                
-                                $(".odd").remove();
-                                $("tbody").append(tr);
-                                
-                                
+                              arr[i]=whole[i];
                             }
+
+                            // for(var i in whole){
+                            // 	total=0;
+                            //     var l=whole[i].length;
+                            //     var bill_id="OFL-00"+(i+1);
+                            //     var cust=whole[i][0];
+                            //     var sales_person=whole[i][10];
+                            //     var date=whole[i][3];
+                            //     var str1=whole[i][11];
+                            //     str1=str1.toString();
+                            //     var data=str1.split(",");
+                            //     for(var k=0;k<data.length;k++){
+                            //     	var d=data[k].split("-");
+                            //     	total=total+Number(d[d.length-3]);
+                            //     }
+                                // var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total+"</td><td><button class='btn btn-primary'  onclick='func2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-danger'  onclick='func1(this); location.reload()' id='dlt-"+i+"'>DELETE</button></td></tr>";
+                                
+                                
+                                // $(".odd").remove();
+                                // $("tbody").append(tr);
+                                
+                                
                         }
-         if((localStorage.getItem("prac"))){
-             var whole=[];
-                            var length=JSON.parse(localStorage.getItem("prac")).length;
+         if((localStorage.getItem("unsaved"))){
+                            var length=JSON.parse(localStorage.getItem("unsaved")).length;
                             //alert(length);
-                            whole=JSON.parse(localStorage.getItem("prac"));
+                            whole=JSON.parse(localStorage.getItem("unsaved"));
                             var lenhj=length-1;
                             
+
                             for(var i=lenhj;i>=0;i--){
-                            	total=0;
+                              arr[whole[i][13]]=whole[i];
+
+                              total=0;
                                 var l=whole[i].length;
                                 var bill_id="OFL-00"+(i+1);
                                 var cust=whole[i][0];
@@ -6641,16 +6648,50 @@ if(less==3){
                                 	var d=data[k].split("-");
                                 	total=total+Number(d[d.length-3]);
                                 }
-                                var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total+"</td><td><button class='btn btn-primary'  onclick='myFunction2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-info'   onclick='submit(this)' id='sub-"+i+"' data-toggle='modal' data-target='#exampleModal-4'>submit</button><button class='btn btn-info'   onclick='print(this)' id='print-"+i+"' >download</button><button class='btn btn-danger'  onclick='myFunction1(this)' id='dlt-"+i+"'>DELETE</button></td></tr>";
+                                // var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total+"</td><td><button class='btn btn-primary'  onclick='myFunction2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-info'   onclick='submit(this)' id='sub-"+i+"' data-toggle='modal' data-target='#exampleModal-4'>submit</button><button class='btn btn-info'   onclick='print(this)' id='print-"+i+"' >download</button><button class='btn btn-danger'  onclick='myFunction1(this)' id='dlt-"+i+"'>DELETE</button></td></tr>";
                                 
                                 
-                                $(".odd").remove();
-                                $("tbody").append(tr);
+                                // $(".odd").remove();
+                                // $("tbody").append(tr);
                                 
                                 
                             }
                         }
-                        
+                        var aaa =[]
+                        for (var i in arr){
+                          aaa.push(i);
+                        }
+                        aaa.sort();
+                        aaa.reverse();
+                        //arr.sort();
+                        var i = 0;
+                        for(var j in aaa){
+                              i = aaa[j];
+                              total=0;
+                                //var l=arr[i].length;
+                                console.log(arr[i]);
+                                var bill_id="OFL-00"+(i+1);
+                                var cust=arr[i][0];
+                                var sales_person=arr[i][10];
+                                var date=arr[i][3];
+                                var str1=arr[i][11];
+                                str1=str1.toString();
+                                var data=str1.split(",");
+                                for(var k=0;k<data.length;k++){
+                                	var d=data[k].split("-");
+                                	total=total+Number(d[d.length-3]);
+                                }
+                                if(arr[i][12]=="YES"){
+                                var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total+"</td><td><button class='btn btn-primary'  onclick='myFunction2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-info'   onclick='submit(this)' id='sub-"+i+"' data-toggle='modal' data-target='#exampleModal-4'>submit</button><button class='btn btn-info'   onclick='print(this)' id='print-"+i+"' >download</button><button class='btn btn-danger'  onclick='myFunction1(this)' id='dlt-"+i+"'>DELETE</button></td></tr>";
+                                }
+                                if(arr[i][12]=="NO"){
+                                var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total+"</td><td><button class='btn btn-primary'  onclick='func2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-danger'  onclick='func1(this); location.reload()' id='dlt-"+i+"'>DELETE</button></td></tr>";
+                                }
+                                
+                                $(".odd").remove();
+                                $("tbody").append(tr);
+                              }
+                            
     </script>
     <script>
     function func2(ele){
@@ -6684,9 +6725,9 @@ if(less==6){
        var idg = idf.split("-");
        var fid=idg[1];
        localStorage.setItem("row",fid);
-       //var l=JSON.parse(localStorage.getItem("prac")).length;
+       //var l=JSON.parse(localStorage.getItem("unsaved")).length;
 
-final=JSON.parse(localStorage.getItem("prac"))[fid];
+final=JSON.parse(localStorage.getItem("unsaved"))[fid];
 var less=final[6];
 if(less==6){
       
@@ -6710,21 +6751,21 @@ if (r == true) {
       
                     
                      var prac=[];
-                     var length=JSON.parse(localStorage.getItem("prac")).length;
+                     var length=JSON.parse(localStorage.getItem("unsaved")).length;
                      
                      for(var f=0;f<length;f++){
                          if(f!=id[1]){
                          var pra=[];
-          pra=JSON.parse(localStorage.getItem('prac'))[f];
+          pra=JSON.parse(localStorage.getItem('unsaved'))[f];
          
      
      
      prac.push(pra);
                          }
                      }
-                     localStorage.removeItem("prac");
+                     localStorage.removeItem("unsaved");
                      
-     localStorage.setItem("prac",JSON.stringify(prac));
+     localStorage.setItem("unsaved",JSON.stringify(prac));
      //alert(bills);
                     
               alert("Deleted successfully!!");      
