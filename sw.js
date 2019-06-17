@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "3optionfunc.js",
-    "revision": "50633a7e9e609f6aba818fe9236b3103"
+    "revision": "6b9bf869f57a563010d18da1940485d9"
   },
   {
     "url": "6optionfunc.js",
-    "revision": "39124777913f4b52936fa5f5835e1e6d"
+    "revision": "459ee1074cca350c62086d8412ef9429"
   },
   {
     "url": "bootstrap.min.css",
@@ -55,35 +55,35 @@ self.__precacheManifest = [
   },
   {
     "url": "images/icons/icon-128x128.png",
-    "revision": "a1ef1b9708d1ea183a9bc3c84ae12f2b"
+    "revision": "fcd272505c32bbc5ca6d937cfed535d6"
   },
   {
     "url": "images/icons/icon-144x144.png",
-    "revision": "46191e632fc0608fddd6807fb3c0e195"
+    "revision": "f6e262a9f722d1543d131640a76c326d"
   },
   {
     "url": "images/icons/icon-152x152.png",
-    "revision": "cb261019ea0d6deebd87ade090d74447"
+    "revision": "7972efdc3a7aa3d5f5fa2d0cc671a68a"
   },
   {
     "url": "images/icons/icon-192x192.png",
-    "revision": "add0be3f5939bed00e3d5c25d3704b8c"
+    "revision": "d35f2e2a8753a3d790b9cd05fbb37614"
   },
   {
     "url": "images/icons/icon-384x384.png",
-    "revision": "944845293fe2d79da51210d2abef435a"
+    "revision": "fcbadc79021b4fa1a983c02837c42093"
   },
   {
     "url": "images/icons/icon-512x512.png",
-    "revision": "42ae7882c8e77d70b4139cefcd7a2a4d"
+    "revision": "6a198b0e2e14447b91dac714175814b2"
   },
   {
     "url": "images/icons/icon-72x72.png",
-    "revision": "afe3b946a130e48a1beff91016a9ab12"
+    "revision": "73f85b8cfcdf83bdd25e5878aac65aea"
   },
   {
     "url": "images/icons/icon-96x96.png",
-    "revision": "997a884575b29116abb58e1d46a79885"
+    "revision": "22b9994d75fbce534c4b2205a2081158"
   },
   {
     "url": "includesw.js",
@@ -95,15 +95,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "573eb09364ba0ec42018b5fbbc540b6d"
+    "revision": "33c5b4a1b71dbcb06b211529f63365e0"
   },
   {
     "url": "jquery-2.2.4.min.js",
     "revision": "2f6b11a7e914718e0290410e85366fe9"
-  },
-  {
-    "url": "manifest.json",
-    "revision": "2271e892ba7fc8636c9a851ddb6ba614"
   },
   {
     "url": "offline_bills.html",
@@ -123,11 +119,11 @@ self.__precacheManifest = [
   },
   {
     "url": "reprint1.html",
-    "revision": "3cb3e49d44c7c0f8ccbf3c036401e29c"
+    "revision": "fa7a6d00307e2df4d3bb2569d0f2bb9f"
   },
   {
     "url": "reprint2.html",
-    "revision": "e6ff66400ba948b5da069b2d37e7f78b"
+    "revision": "c25df0a5346cd291cd7cf08aa8028ea0"
   },
   {
     "url": "unsaved.html",
