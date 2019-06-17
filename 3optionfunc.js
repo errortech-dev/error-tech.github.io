@@ -1,5 +1,5 @@
 function test() {
-  alert("Download starting");
+  alert('Download starting');
 
   var n=timestamp;
   var array=[];

@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "3optionfunc.js",
-    "revision": "6b9bf869f57a563010d18da1940485d9"
+    "revision": "3ddd786e7498ae8dc620ae57ddeeb2c2"
   },
   {
     "url": "6optionfunc.js",
-    "revision": "459ee1074cca350c62086d8412ef9429"
+    "revision": "bff442913eef2041de88f94275ad466d"
   },
   {
     "url": "bootstrap.min.css",
@@ -43,11 +43,11 @@ self.__precacheManifest = [
   },
   {
     "url": "edit.html",
-    "revision": "8d573c1c260920b11c8cbac4718ef8c1"
+    "revision": "71eab86d0f65b637d817a7c8fa4cdf49"
   },
   {
     "url": "edit2.html",
-    "revision": "58bb6047293f4b0944c37e6f6309ca2c"
+    "revision": "fb2130d2d9078fee613a3a406bcf3305"
   },
   {
     "url": "html2pdf.bundle.js",
@@ -95,7 +95,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "33c5b4a1b71dbcb06b211529f63365e0"
+    "revision": "c70eb47d818fa51e6be18978a2162ea0"
   },
   {
     "url": "jquery-2.2.4.min.js",
@@ -107,15 +107,15 @@ self.__precacheManifest = [
   },
   {
     "url": "pdf1.html",
-    "revision": "eeea8383c7cc38c1749913c7d903467c"
+    "revision": "b942d48a741e3ab801e9920a83f1e930"
   },
   {
     "url": "pdf2.html",
-    "revision": "3ae1e57739ba5ebac162a2bc12153927"
+    "revision": "fc9c0cdc8a3beb8e397a691d6ae1c1f1"
   },
   {
     "url": "practice1.html",
-    "revision": "e2c4faad7f2766b0682c39ba43b97077"
+    "revision": "e1c4abf38304bbf8a8207a8a7ec56fa1"
   },
   {
     "url": "reprint1.html",
@@ -127,11 +127,11 @@ self.__precacheManifest = [
   },
   {
     "url": "unsaved.html",
-    "revision": "e63bc711e6504b0d5553854593872472"
+    "revision": "cf2e91317b111327bd7214b6828139a1"
   },
   {
     "url": "unsaved2.html",
-    "revision": "b8e3bb6ee17fc34350f6243f7531d785"
+    "revision": "4ead4f2e98ae0c1fb3d49de9322c1110"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
