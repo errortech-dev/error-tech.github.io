@@ -764,7 +764,7 @@ function test() {
       lines=46;
   
     }
-      for(var w=d;w<lines;w++){
+      for(var w=d;w<lines-5;w++){
    
    output+=' <td style="width:2%">&nbsp</td><td style="width:14%" > </td><td style="width:7%"></td><td style="width:7%"></td><td style="width:7%"></td><td style="width:11%"></td></tr>';
        
@@ -779,7 +779,7 @@ function test() {
       lines=46;
   
     }
-      for(var w=d;w<lines;w++){
+      for(var w=d;w<lines-5;w++){
    
    output+=' <td style="width:2%">&nbsp</td><td style="width:14%" > </td><td style="width:7%"></td><td style="width:7%"></td><td style="width:7%"></td><td style="width:11%"></td></tr>';
        
@@ -793,7 +793,7 @@ function test() {
       lines=46;
   
     }
-  for(w=1;w<lines;w++){
+  for(w=1;w<lines-5;w++){
   
    
    output+=' <td style="width:2%">&nbsp</td><td style="width:14%" > </td><td style="width:7%"></td><td style="width:7%"></td><td style="width:7%"></td><td style="width:11%"></td></tr>';
