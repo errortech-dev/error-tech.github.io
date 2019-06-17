@@ -111,7 +111,7 @@ self.__precacheManifest = [
   },
   {
     "url": "pdf2.html",
-    "revision": "fc9c0cdc8a3beb8e397a691d6ae1c1f1"
+    "revision": "3ae1e57739ba5ebac162a2bc12153927"
   },
   {
     "url": "practice1.html",
