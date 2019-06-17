@@ -1,6 +1,6 @@
 function test() {
   // Get the element.
-  
+  alert("Download starting");
 
 var n=timestamp;
 var array=[];
