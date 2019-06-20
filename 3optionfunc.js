@@ -191,7 +191,7 @@ function test() {
         totalar[a]=ghj;
         
         a++;
-        output+='<tr> <td style="text-align:right"  colspan="6"><b>TOTAL:'+xv+'&nbsp&nbsp&nbsp&nbsp</b></td>';
+        output+='<tr> <td style="text-align:right"  colspan="6"><b>TOTAL:'+parseInt(xv).toFixed(3)+'&nbsp&nbsp&nbsp&nbsp</b></td>';
         d++;
   
     }
@@ -369,7 +369,7 @@ function test() {
   pcs[a]=c;
         totalar[a]=xv;
         a++;
-  output+='<tr> <td colspan="6" style="text-align:right"><b>TOTAL:'+xv+'&nbsp&nbsp&nbsp&nbsp</b></td></tr>';
+  output+='<tr> <td colspan="6" style="text-align:right"><b>TOTAL:'+parseInt(xv).toFixed(3)+'&nbsp&nbsp&nbsp&nbsp</b></td></tr>';
   d++;
   if(d>=46){
       if(n>3){
@@ -626,7 +626,7 @@ function test() {
   var totalgh=Number(totalar[m]);
   grandtotal=grandtotal+totalgh;
   var grandto=grandtotal.toFixed(2)
-  output+='<tr class="cen"><td style="width:2%">'+item_count+'</td><td style="width:21%"  >'+namear[m]+' </td><td style="width:21%"  >'+lot[m]+' </td><td style="width:7%">'+pcs[m]+'</td><td colspan="2" style="width:18%">'+totalar[m]+' </td></tr>';
+  output+='<tr class="cen"><td style="width:2%">'+item_count+'</td><td style="width:21%"  >'+namear[m]+' </td><td style="width:21%"  >'+lot[m]+' </td><td style="width:7%">'+pcs[m]+'</td><td colspan="2" style="width:18%">'+parseInt(totalar[m]).toFixed(3)+' </td></tr>';
   d++;
   }
   if(d>=46){

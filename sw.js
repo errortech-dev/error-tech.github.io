@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "3optionfunc.js",
-    "revision": "3ddd786e7498ae8dc620ae57ddeeb2c2"
+    "revision": "6d060e649ec41a77d4e0825863b1e3e7"
   },
   {
     "url": "6optionfunc.js",
-    "revision": "bff442913eef2041de88f94275ad466d"
+    "revision": "deb303cd5f1cd7511970cd2ce6c81697"
   },
   {
     "url": "bootstrap.min.css",
@@ -107,11 +107,11 @@ self.__precacheManifest = [
   },
   {
     "url": "pdf1.html",
-    "revision": "b942d48a741e3ab801e9920a83f1e930"
+    "revision": "77c2329d37feceb482b17dc4df6dc4b2"
   },
   {
     "url": "pdf2.html",
-    "revision": "3ae1e57739ba5ebac162a2bc12153927"
+    "revision": "a91514e88d54131d3edd64658cb74214"
   },
   {
     "url": "practice1.html",
