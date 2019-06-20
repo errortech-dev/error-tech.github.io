@@ -653,7 +653,7 @@ table, th, td {
   </head>
 
   <body class="nav-md">
-      <script src="includesw.js"></script>
+    <script src="includesw.js"></script>
 
     <div class="container body">
       <div class="main_container">
@@ -688,10 +688,11 @@ table, th, td {
                <div class="menu_section">
                 <!--<h3>General</h3>-->
                      <ul class="nav side-menu">
-                 <li><a href="index.html" ><i class="fa fa-clone"></i> Generate bill(6) </a>
+                 
+                 <li><a href="index.html" ><i class="fa fa-clone"></i> Generate bill(6)  </a></li>
+                 <li><a href="practice1.html" ><i class="fa fa-clone"></i> Generate bill(3) </a>
                    
                   </li>
-                 <li><a href="practice1.html" ><i class="fa fa-clone"></i> Generate bill(3)  </a></li>
                   <li><a href="offline_bills.html" ><i class="fa fa-clone"></i> Offline bills  </a>
                    
                   </li>
@@ -5623,11 +5624,7 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
       function copyRow(){
        	//check is there any rows in that item
        	if(count>0){
-            
-           count++;
-
-           //get previous row values
-           var row=$('#myTable tr:last').index();
+            var row=$('#myTable tr:last').index();
            count++;
 
            //get previous row values
@@ -5643,14 +5640,14 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
 
 
            
-            var markup = '<tr id="row-'+c+'"><td>'+count+'</td> <td    ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+t+'l'+c+'" type="number" value="'+l+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w+'"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'l1-'+c+'"style="width:100%;text-align:center;" type="number"  value="'+l1+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w1+'"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'l2-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l2+'"></td><th>X</th><td   ><input oninput="update()"    onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w2+'"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'l3-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l3+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"  value="'+w3+'"></td><td id="ty'+t+'a'+c+'" >'+area+'</td></tr>';
+            var markup = '<tr id="row-'+c+'"><td>'+count+'</td> <td    ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+t+'l'+c+'" type="number" value="'+l+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w+'"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'l1-'+c+'"style="width:100%;text-align:center;" type="number"  value="'+l1+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w1+'"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'l2-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l2+'"></td><th>X</th><td   ><input oninput="update()"  onKeyPress="enter6(this)"  onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w2+'"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'l3-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l3+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"  value="'+w3+'"></td><td id="ty'+t+'a'+c+'" >'+area+'</td></tr>';
             $("table tbody").append(markup);
             c++;
         }
         else{
         	alert("sorry , no rows in this item");
         }
-         calculateArea();
+        calculateArea();
             
         }
         function deleteRow(){

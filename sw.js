@@ -47,7 +47,7 @@ self.__precacheManifest = [
   },
   {
     "url": "edit2.html",
-    "revision": "fb2130d2d9078fee613a3a406bcf3305"
+    "revision": "d949e4f8f80ba3c47ae17b507ee82f62"
   },
   {
     "url": "html2pdf.bundle.js",
@@ -131,7 +131,7 @@ self.__precacheManifest = [
   },
   {
     "url": "unsaved2.html",
-    "revision": "4ead4f2e98ae0c1fb3d49de9322c1110"
+    "revision": "5fc6129a3f05fcd95bd26a19efb82dd0"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
