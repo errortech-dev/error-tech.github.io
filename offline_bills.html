@@ -6682,7 +6682,7 @@ if(less==3){
                                 	total=total+Number(d[d.length-3]);
                                 }
                                 if(arr[i][12]=="YES"){
-                                var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total.toFixed(3)+"</td><td><button class='btn btn-primary'  onclick='myFunction2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-info'   onclick='submit(this)' id='sub-"+i+"' data-toggle='modal' data-target='#exampleModal-4'>submit</button><button class='btn btn-info'   onclick='print(this)' id='print-"+i+"' >download</button><button class='btn btn-danger'  onclick='myFunction1(this)' id='dlt-"+i+"'>DELETE</button></td></tr>";
+                                var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total.toFixed(3)+"</td><td><button class='btn btn-primary'  onclick='myFunction2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-info'   onclick='submit(this)' id='sub-"+i+"' data-toggle='modal' data-target='#exampleModal-4'>submit</button><button class='btn btn-info'   onclick='print(this)' id='print-"+i+"' >download</button><button class='btn btn-danger'  onclick='func1(this); location.reload()' id='dlt-"+i+"'>DELETE</button></td></tr>";
                                 }
                                 if(arr[i][12]=="NO"){
                                 var tr="<tr><td>"+date+"</td><td>"+cust+"</td><td>"+sales_person+"</td><td>"+total.toFixed(3)+"</td><td><button class='btn btn-primary'  onclick='func2(this)' id='btn-"+i+"'>EDIT</button><button class='btn btn-danger'  onclick='func1(this); location.reload()' id='dlt-"+i+"'>DELETE</button></td></tr>";
