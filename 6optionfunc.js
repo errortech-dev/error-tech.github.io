@@ -79,7 +79,7 @@ var ghj=xv;
     totalar[a]=ghj;
     
     a++;
-    output+='<tr> <td style="text-align:right"  colspan="9"><b>TOTAL:'+parseInt(xv).toFixed(2)+'&nbsp&nbsp&nbsp&nbsp</b></td>';
+    output+='<tr> <td style="text-align:right"  colspan="9"><b>TOTAL:'+parseFloat(xv).toFixed(2)+'&nbsp&nbsp&nbsp&nbsp</b></td>';
     d++;
 
 }
@@ -106,7 +106,7 @@ pcs[a]=c;
     totalar[a]=xv;
     
     a++;
-output+='<tr> <td colspan="9" style="text-align:right"><b>TOTAL:'+parseInt(xv).toFixed(2)+'&nbsp&nbsp&nbsp&nbsp</b></td></tr>';
+output+='<tr> <td colspan="9" style="text-align:right"><b>TOTAL:'+parseFloat(xv).toFixed(2)+'&nbsp&nbsp&nbsp&nbsp</b></td></tr>';
 d++;
 
 
@@ -135,7 +135,7 @@ var totalgh=Number(totalar[m]);
 //alert(totalgh);
 grandtotal=grandtotal+totalgh;
 var grandto=grandtotal.toFixed(2)
-output+='<tr class="cen"><td style="width:2%">'+item_count+'</td><td style="width:21%" colspan="3" >'+namear[m]+' </td><td style="width:21%" colspan="3" >'+lot[m]+' </td><td style="width:7%">'+pcs[m]+'</td><td colspan="3" style="width:18%">'+parseInt(totalar[m]).toFixed(2)+' </td></tr>';
+output+='<tr class="cen"><td style="width:2%">'+item_count+'</td><td style="width:21%" colspan="3" >'+namear[m]+' </td><td style="width:21%" colspan="3" >'+lot[m]+' </td><td style="width:7%">'+pcs[m]+'</td><td colspan="3" style="width:18%">'+parseFloat(totalar[m]).toFixed(2)+' </td></tr>';
 d++;
 }
 

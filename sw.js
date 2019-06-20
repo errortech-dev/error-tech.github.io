@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "3optionfunc.js",
-    "revision": "6d060e649ec41a77d4e0825863b1e3e7"
+    "revision": "338c67269246ed20ea19bc75aa0f7801"
   },
   {
     "url": "6optionfunc.js",
-    "revision": "deb303cd5f1cd7511970cd2ce6c81697"
+    "revision": "5c2aa5c6153dd4fe54370265431f92b6"
   },
   {
     "url": "bootstrap.min.css",
@@ -103,15 +103,15 @@ self.__precacheManifest = [
   },
   {
     "url": "offline_bills.html",
-    "revision": "32cdf37c20aed58cabf8dfe62e759048"
+    "revision": "74ea6190f52fec8e75116c94af203277"
   },
   {
     "url": "pdf1.html",
-    "revision": "77c2329d37feceb482b17dc4df6dc4b2"
+    "revision": "22c7b4e61892471ffe08fc7220701e09"
   },
   {
     "url": "pdf2.html",
-    "revision": "a91514e88d54131d3edd64658cb74214"
+    "revision": "078bce7a8e5f5c8a2aada3f523f0974d"
   },
   {
     "url": "practice1.html",
