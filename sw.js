@@ -103,7 +103,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline_bills.html",
-    "revision": "e8d505bbe41481a26e594be18fc3616e"
+    "revision": "f8bef05a83cfc23318437bcc7242645a"
   },
   {
     "url": "pdf1.html",
