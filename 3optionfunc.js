@@ -1038,10 +1038,12 @@ function test() {
      if(clr<len){
            	   $("#ty"+t).css("background-color", "skyblue");
                alert('please fill Color');
+               return;
            }
            else if(lid<len){
            	$("#lot"+t).css("background-color", "skyblue");
-           	alert('please fill LOTID');
+             alert('please fill LOTID');
+             return;
            }
      }
    var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];

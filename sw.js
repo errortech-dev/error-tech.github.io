@@ -43,11 +43,11 @@ self.__precacheManifest = [
   },
   {
     "url": "edit.html",
-    "revision": "b827f2a69b742523386e6933d01b2eb1"
+    "revision": "ee4cd62a4e1274d40612b348e3525ad7"
   },
   {
     "url": "edit2.html",
-    "revision": "fc072bf609097629a11397f93f361b33"
+    "revision": "f27f36c7be8c3881a42432d830b3a0e1"
   },
   {
     "url": "html2pdf.bundle.js",
@@ -95,7 +95,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c70eb47d818fa51e6be18978a2162ea0"
+    "revision": "bf0195651c3312e1b6a321ca5a403355"
   },
   {
     "url": "jquery-2.2.4.min.js",
@@ -115,7 +115,7 @@ self.__precacheManifest = [
   },
   {
     "url": "practice1.html",
-    "revision": "e1c4abf38304bbf8a8207a8a7ec56fa1"
+    "revision": "d691ce177077e27630a5a1a72e33dcbe"
   },
   {
     "url": "reprint1.html",
@@ -127,11 +127,11 @@ self.__precacheManifest = [
   },
   {
     "url": "unsaved.html",
-    "revision": "318c97359385093045dd3049496a073a"
+    "revision": "52a73f897a2d3ba91d5050fe85e7613e"
   },
   {
     "url": "unsaved2.html",
-    "revision": "fd6a798dc019b18a09080e2fd7a119a3"
+    "revision": "c35e793678b9335ea73bdf217246b574"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
