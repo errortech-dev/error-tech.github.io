@@ -5781,7 +5781,9 @@ function copyRow(){
            }
                
            }
-          
+           if(rarea<0){
+             rarea=0;
+           }
            var x = document.getElementById("selecto").value;
            if(x=="cm to meter"){
                var area=rarea*0.0001;
