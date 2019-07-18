@@ -5690,7 +5690,7 @@ function copyRow(){
               var z=t;
            t++;
           
-            var item = '<tr style="height:30px"><td id="tyt'+z+'"colspan="7">TOTAL:'+totalar+'</td><td colspan="7"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this)">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this)"> Delete</button></td></tr><tr><th colspan="3" style="height:50px">Colour</th><th colspan="4" id="ty'+t+'" contenteditable="true" oninput="update()" ></th><th colspan="3" style="height:50px">Lot Id</th><th colspan="4" id="lot'+t+'" contenteditable="true" oninput="update()" ></th></tr><tr><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td >Area</td></tr><tr><td>1</td> <td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l1-'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w1-'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l2-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w2-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l3-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w3-'+c+'"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
+            var item = '<tr style="height:30px"><td id="tyt'+z+'"colspan="7">TOTAL:'+totalar+'</td><td colspan="7"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this); update()">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this); update()"> Delete</button></td></tr><tr><th colspan="3" style="height:50px">Colour</th><th colspan="4" id="ty'+t+'" contenteditable="true" oninput="update()" ></th><th colspan="3" style="height:50px">Lot Id</th><th colspan="4" id="lot'+t+'" contenteditable="true" oninput="update()" ></th></tr><tr><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td >Area</td></tr><tr><td>1</td> <td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l1-'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w1-'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l2-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w2-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l3-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w3-'+c+'"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
             $("table tbody").append(item);
             
             c++;
@@ -5712,6 +5712,7 @@ function copyRow(){
         	if (r == true) {
         	var rowid=$(id).closest('tr').index();
         	document.getElementById("myTable").deleteRow(rowid);
+          cancel++;
         	}
         	else {
     alert( "Canceled..!!");
@@ -6150,6 +6151,7 @@ var j=0;
 var c=0;
 var t=0; 
 var count=1;
+var cancel=0;
 
  for(var i=0;i<cou;i++){
      	//alert();

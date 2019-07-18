@@ -190,7 +190,7 @@ $("#ex").append(output);
   
       function submit(){
         areac();
-      var array = new Array(c);
+      var array = new Array(c-cancel);
     var elem=0;
       	var sum=0;
              var clr=0;
@@ -316,9 +316,10 @@ $("#ex").append(output);
            
            x+=item_name+"-"+l+"-"+w+"-"+l1+"-"+w1+"-"+l2+"-"+w2+"-"+l3+"-"+w3+"-"+l4+"-"+w4+"-"+l5+"-"+w5+"-"+l6+"-"+w6+"-"+are+"-"+total+"-"+lot_id;
 
-
-            array[elem-1]=x;
             
+            array[elem-1]=x;
+            /*alert( $.toJSON(array) );*/
+           /* alert(JSON.stringify(array));*/
       
           
          
@@ -379,6 +380,7 @@ $("#ex").append(output);
   }
   
     function update(){
+      /*alert("Start one " + t);*/
     areac();
       var array = new Array(c);
     var elem=0;
@@ -410,11 +412,15 @@ $("#ex").append(output);
           //  }
           //  else{
              for(var h=0;h<c;h++){
+             /* alert(c);*/
                  var a=$("#ty"+t+"a"+h).text();
+                 /*alert(a);*/
                 var b=Number(a);
                  sum+=b;
+                 /*alert(sum);*/
              }
               var totalar= sum.toFixed(2);
+              /*alert(totalar);*/
       
      var item_nm="";
      var name=$("#name").val();
@@ -484,13 +490,13 @@ $("#ex").append(output);
         	for(var z=0;z<c;z++){
         		if($("#ty"+g+"a"+z).length){
         		 item_total=item_total+parseFloat($("#ty"+g+"a"+z).text());
-        		 //alert(item_total);
+        		 
         		}
 
         	}
         	total=item_total;
 
-        	
+        	/*alert(item_total);*/
         }
         //alert(total);
         //only one item total
@@ -566,4 +572,5 @@ $("#ex").append(output);
                          
 
       //}	
+ /* alert("End one " + t);*/
   }

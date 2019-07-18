@@ -1001,7 +1001,7 @@ font-size:20px;
                          <button  class="btn btn-success" onclick="deleteRow(); update()">Back</button>
                            <button  class="btn btn-success" onclick="copyRow(); update()">Copy</button>
                            
-                           <button type="button" id="adds" class="btn btn-primary" onclick="addItem()">Add item</button>
+                           <button type="button" id="adds" class="btn btn-primary" onclick="addItem(); update()">Add item</button>
                             <button onclick="submit()" class="btn btn-success">Submit</button>
                             <input type="text" name="total" id="total">
 
@@ -5877,7 +5877,7 @@ return false;*/
          }
 });*/
        var c=1;
-       
+       var cancel = 0;
        var count=1;
        function copyRow(){
        	//check is there any rows in that item
@@ -5981,7 +5981,7 @@ function addItem(){
               var z=t;
            t++;
           
-            var item ='<tr style="height:30px" id="row-'+z+'"><td id="tyt'+z+'"colspan="12">TOTAL:'+totalar+'</td><td colspan="12"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this)">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this)"> Delete</button></td></tr><tr><th colspan="7" style="height:50px">Colour</th><th colspan="8" id="ty'+t+'" contenteditable="true" oninput="update()" ></th><th colspan="7" style="height:50px">Lot Id</th><th colspan="8" id="lot'+t+'" contenteditable="true" oninput="update()" ></th></tr><tr ><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td colspan="3">Less4</td><td colspan="3">Less5</td><td colspan="3">Less6</td><td >Area</td></tr><tr id="row-'+c+'"><td>1</td> <td   ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l'+c+'" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l1-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;"type="number"></td><td   ><input oninput="update()" id="ty'+t+'l2-'+c+'"   onkeyup="areac()" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()" id="ty'+t+'l3-'+c+'"  onkeyup="areac()" style="width:100%;text-align:center;" type="number"><th>X</th></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l4-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w4-'+c+'" style="width:100%;text-align:center;"type="number"></td><td   ><input oninput="update()" id="ty'+t+'l5-'+c+'"   onkeyup="areac()" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w5-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()" id="ty'+t+'l6-'+c+'"  onkeyup="areac()" style="width:100%;text-align:center;" type="number"><th>X</th></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w6-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
+            var item ='<tr style="height:30px" id="row-'+z+'"><td id="tyt'+z+'"colspan="12">TOTAL:'+totalar+'</td><td colspan="12"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this); update()">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this); update()"> Delete</button></td></tr><tr><th colspan="7" style="height:50px">Colour</th><th colspan="8" id="ty'+t+'" contenteditable="true" oninput="update()" ></th><th colspan="7" style="height:50px">Lot Id</th><th colspan="8" id="lot'+t+'" contenteditable="true" oninput="update()" ></th></tr><tr ><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td colspan="3">Less4</td><td colspan="3">Less5</td><td colspan="3">Less6</td><td >Area</td></tr><tr id="row-'+c+'"><td>1</td> <td   ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l'+c+'" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l1-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;"type="number"></td><td   ><input oninput="update()" id="ty'+t+'l2-'+c+'"   onkeyup="areac()" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()" id="ty'+t+'l3-'+c+'"  onkeyup="areac()" style="width:100%;text-align:center;" type="number"><th>X</th></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l4-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w4-'+c+'" style="width:100%;text-align:center;"type="number"></td><td   ><input oninput="update()" id="ty'+t+'l5-'+c+'"   onkeyup="areac()" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w5-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()" id="ty'+t+'l6-'+c+'"  onkeyup="areac()" style="width:100%;text-align:center;" type="number"><th>X</th></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w6-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
             $("table tbody").append(item);
             
             c++;
@@ -6005,6 +6005,7 @@ function addItem(){
         	if (r == true) {
         	var rowid=$(id).closest('tr').index();
         	document.getElementById("myTable").deleteRow(rowid);
+        	cancel++;
         }
         	else {
     alert( "Canceled..!!");

@@ -5712,6 +5712,7 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
         	if (r == true) {
         	var rowid=$(id).closest('tr').index();
         	document.getElementById("myTable").deleteRow(rowid);
+          cancel++;
         	}
         	else {
     alert( "Canceled..!!");
@@ -6151,6 +6152,7 @@ var j=0;
 var c=0;
 var t=0; 
 var count=1;
+var cancel = 0;
 
  for(var i=0;i<cou;i++){
      	//alert();
