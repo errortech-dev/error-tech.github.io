@@ -819,7 +819,7 @@ function test() {
        
        function submit(){
         areac();
-        var array = new Array(c);
+        var array = new Array(c-cancel);
         var elem=0;
       	//check if item name is not empty
       	var sum=0;
